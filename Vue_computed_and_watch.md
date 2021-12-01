@@ -8,3 +8,4 @@
 1. watch是监听的意思，一旦监听的属性变化了，就执行函数
 2. deep含义，监听一个对象里面属性的变化；immediate含义，如果表示是否在第一次渲染的时候执行函数
 3. 可以通过options.watch和this.$watch来设置
+4. watch 支持异步代码而 computed 不行
