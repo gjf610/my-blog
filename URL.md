@@ -60,4 +60,3 @@ ping domain
 ### HTTP (Hyper Text Transfer Protocol)
 基于TCP和IP两个协议开发的
 
-部分资料来源： &copy;饥人谷
