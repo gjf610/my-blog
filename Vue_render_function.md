@@ -21,7 +21,7 @@ template
 
 ## 虚拟DOM
 真实DOM，很多人知道原生DOM API，例如document.createElement，我们可以创建一个真实的div节点表示在我们的文档流中加入一个div，它内部实际上是通过使用C++编写的浏览器引擎实现的，我们实际上并没有接触到这部分，它只是公开了JavaScript中的API以供我们使用。相比之下，Vue中的虚拟DOM会在每个实例this.$createElement返回一个虚拟节点，这个虚拟节点也表示一个div，但它是一个纯JavaScript对象。差异实际是非常大的，如果你在浏览器中打印div属性，你会看到一个真实的div节点会有很多属性，还有他的底层实现实际上很复杂。我们一般把这些称为原生代码的JavaScript接口，双方的调用成本很高，而且他们会比在JavaScript环境执行JavaScript代码更消耗资源，所以很多时候我们会说修改DOM是缓慢的，有的浏览器可能会做优化，但总的来说，对于经常在JavaScript端调用原生端效果不大.
-
+```js
 Actual DOM
 "[object HTMLDivElement]"
 Browser Native Object(expensive)
@@ -29,7 +29,7 @@ Browser Native Object(expensive)
 Virtual DOM
 {tag: 'div', data: {attrs: {}, ...}, children: []} 
 Plan JavaStript Object (cheap)
-
+```
 就像你看到的代码，虚拟DOM div只是一个对象，它有一个标签，告诉我们它是一个div，还有一个数据对象，包含一些属性。如果他没有任何属性，就不需要数据对象，还有一个children列表，表示他还有很多虚拟节点。现在我们就有了一个通过虚拟节点组成的虚拟DOM树.
 
 假设我们有1000个元素的列表，创建1000个JavaScript对象是非常节省的，也非常快。但是创建1000个真实div节点要昂贵得多？
