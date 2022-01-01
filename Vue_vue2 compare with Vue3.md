@@ -62,7 +62,6 @@ export default defineComponent({
 ```
 
 ### 属性绑定
-* 使用 $attrs 或者 context.attrs 获取所有属性
-* 使用 v-bind="$attrs" 批量绑定属性
+* context.attrs 获取所有属性
 * 使用 const {size, level, ...xxx} = context.attrs 将属性分开
 
