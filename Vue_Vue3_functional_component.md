@@ -18,7 +18,7 @@ export default defineComponent({
 
 ### 3defineComponent() setup Composition API
 ```ts
-import { ref } from 'vue'
+import { ref,defineComponent } from 'vue'
 export default defineComponent({
   setup() {
     const count = ref<number>(0)
