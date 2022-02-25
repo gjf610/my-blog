@@ -53,9 +53,31 @@ div1.addEventListener('click', (e)=>{
 })
 ```
 这里button元素一开始并没有在HTML里，是不能直接监听button元素。只有通过监听祖先，等点击的时候看看是不是想要监听的元素即可。
+### 高级版
+思路是点击 span 后，递归遍历 span 的祖先元素看其中有没有 ul 里面的 li。
+```js
+function delegate(element, eventType, selector, fn){
+  element.addEventListener(eventType, e=>{
+    let el = e.target
+    while(!el.matches(selector)){
+      if(element === el){
+        el =null
+        break
+      }
+      el = el.parentNode
+    }
+    el&&fn.call(el, e, el)
+  })
+  return element
+}
 
+delegate(ul, 'click', 'li', fn);
+```
 ### 优点：
 1. 节省监听的数量，可以省内存
 2. 可以监听动态元素
+### 缺点：
+1. 调试时不容易确定监听者
+> 如何调试chrome 里面有EventListener
 
 部分资料来源： &copy;饥人谷
