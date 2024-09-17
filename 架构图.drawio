@@ -16,6 +16,9 @@
         <mxCell id="h4a_0MuscMIAsqZkccJg-5" value="获取元素" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#ffe6cc;sketch=1;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="520" y="260" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="h4a_0MuscMIAsqZkccJg-6" value="&lt;font color=&quot;#1a1a1a&quot; style=&quot;font-size: 19px;&quot;&gt;整合句子&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#e1d5e7;sketch=1;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="360" y="180" width="280" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
