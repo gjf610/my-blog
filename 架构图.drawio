@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.16">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="gYU9W0TBQRhG5-N19RFS">
     <mxGraphModel dx="1434" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -59,6 +59,42 @@
         </mxCell>
         <mxCell id="h4a_0MuscMIAsqZkccJg-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.786;entryY=0.053;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="h4a_0MuscMIAsqZkccJg-27" target="h4a_0MuscMIAsqZkccJg-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CTgyaFmB8Z5NzS_yjj29-1" target="CTgyaFmB8Z5NzS_yjj29-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-1" value="prompt&amp;nbsp;&lt;div&gt;提示词输入&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="570" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CTgyaFmB8Z5NzS_yjj29-2" target="CTgyaFmB8Z5NzS_yjj29-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-2" value="Embedding&lt;div&gt;token变成向量&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="570" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CTgyaFmB8Z5NzS_yjj29-4" target="CTgyaFmB8Z5NzS_yjj29-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-4" value="Encoder/Decoder" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="570" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-5" value="输出文本" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="570" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-6" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="770" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CTgyaFmB8Z5NzS_yjj29-8" target="CTgyaFmB8Z5NzS_yjj29-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-8" value="Transformer&lt;div&gt;（自注意力机制）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="570" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CTgyaFmB8Z5NzS_yjj29-9" target="CTgyaFmB8Z5NzS_yjj29-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CTgyaFmB8Z5NzS_yjj29-9" value="Tokenization&lt;br&gt;文本变成token" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="570" width="90" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
