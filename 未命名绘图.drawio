@@ -1199,6 +1199,9 @@
         <mxCell id="KSeyeW1CyBEnutPewPU9-134" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="3041.9700000000003" y="906" width="80" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="KSeyeW1CyBEnutPewPU9-139" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;ModelProvider&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3344" y="88" width="120" height="42" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
